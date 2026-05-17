@@ -223,21 +223,36 @@ button{ font:inherit; color:inherit; background:none; border:0; cursor:none; }
 /* ---------- glitch hover (RGB split) ---------- */
 [data-glitch]{
   display:inline-block;
-  transition: text-shadow .12s, transform .12s, color .12s;
+  transition: text-shadow .12s, color .12s;
 }
 [data-glitch]:hover{
-  text-shadow:
-    -3px 0 var(--cyan),
-     3px 0 var(--yellow),
-     0 0 currentColor;
-  animation: glitch .25s infinite;
+  animation: glitch .25s infinite steps(1);
 }
 @keyframes glitch{
-  0%,100%{ transform: translate(0,0) skew(0); }
-  20%   { transform: translate(-2px, 1px) skew(-1deg); }
-  40%   { transform: translate(2px, -1px) skew(1deg); }
-  60%   { transform: translate(-1px, -2px) skew(-.5deg); }
-  80%   { transform: translate(1px, 2px) skew(.5deg); }
+  0%,100%{
+    text-shadow:
+      -3px 0 var(--cyan),
+       3px 0 var(--yellow),
+       0 0 currentColor;
+  }
+  25%{
+    text-shadow:
+      -2px 0 var(--cyan),
+       4px 1px var(--yellow),
+       0 0 currentColor;
+  }
+  50%{
+    text-shadow:
+       3px 0 var(--cyan),
+      -3px -1px var(--yellow),
+       0 0 currentColor;
+  }
+  75%{
+    text-shadow:
+      -4px 1px var(--cyan),
+       2px -1px var(--yellow),
+       0 0 currentColor;
+  }
 }
 
 /* ---------- view-triggered reveal ---------- */
