@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>FLAMINGO / a study in pink</title>
+<meta name="description" content="An editorial study of Phoenicopteridae — six species, one obsessive bird." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400;1,9..144,700;1,9..144,900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- noise overlay -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- custom cursor -->
+<div class="cursor" aria-hidden="true"></div>
+<div class="cursor-trail" aria-hidden="true"></div>
+
+<!-- scroll progress -->
+<div class="progress" aria-hidden="true"></div>
+
+<!-- top status bar -->
+<header class="topbar" data-cursor="link">
+  <div class="topbar__edge">◍ ISSUE 001</div>
+  <div class="marquee marquee--xs">
+    <div class="marquee__track">
+      <span>PHOENICOPTERIDAE&nbsp;&nbsp;✦&nbsp;&nbsp;FLAMMA&nbsp;&nbsp;✦&nbsp;&nbsp;A STUDY IN PINK&nbsp;&nbsp;✦&nbsp;&nbsp;EST. ALKALINE&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+      <span>PHOENICOPTERIDAE&nbsp;&nbsp;✦&nbsp;&nbsp;FLAMMA&nbsp;&nbsp;✦&nbsp;&nbsp;A STUDY IN PINK&nbsp;&nbsp;✦&nbsp;&nbsp;EST. ALKALINE&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+      <span>PHOENICOPTERIDAE&nbsp;&nbsp;✦&nbsp;&nbsp;FLAMMA&nbsp;&nbsp;✦&nbsp;&nbsp;A STUDY IN PINK&nbsp;&nbsp;✦&nbsp;&nbsp;EST. ALKALINE&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+    </div>
+  </div>
+  <div class="topbar__edge topbar__edge--right">2026 / 05 / 17</div>
+</header>
+
+<!-- ========== 00 / HERO ========== -->
+<section class="hero" id="hero">
+  <div class="hero__meta">
+    <span>N° 00</span>
+    <span class="hero__meta-mid">FILED UNDER /</span>
+    <span>AVES / OBSESSION</span>
+  </div>
+
+  <h1 class="hero__title">
+    <span class="line" data-glitch>FLAM</span><span class="line line--cut" data-glitch>INGO</span>
+  </h1>
+
+  <div class="hero__svg" aria-hidden="true">
+    <!-- big flamingo silhouette -->
+    <svg viewBox="0 0 400 600" preserveAspectRatio="xMidYMid meet">
+      <g class="bird">
+        <!-- tail -->
+        <path d="M335 332 Q372 312 380 278 L355 338 Z" fill="currentColor"/>
+        <!-- body -->
+        <ellipse cx="245" cy="335" rx="105" ry="58" fill="currentColor"/>
+        <!-- wing detail -->
+        <path d="M205 325 Q260 295 305 320 Q280 340 225 345 Z" fill="rgba(0,0,0,.18)"/>
+        <!-- neck S-curve -->
+        <path d="M188 320 Q128 285 148 220 Q170 148 218 132 Q272 118 268 70"
+              stroke="currentColor" stroke-width="24" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- head -->
+        <circle cx="265" cy="68" r="20" fill="currentColor"/>
+        <!-- eye -->
+        <circle cx="271" cy="64" r="2.4" fill="#0A0A0A"/>
+        <!-- beak -->
+        <path d="M281 72 Q307 78 310 100 Q296 92 282 84 Z" fill="#0A0A0A"/>
+        <!-- legs -->
+        <line x1="222" y1="390" x2="222" y2="568" stroke="currentColor" stroke-width="11" stroke-linecap="round"/>
+        <circle cx="222" cy="430" r="7" fill="currentColor"/>
+        <path d="M210 568 L 248 568" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+        <!-- bent leg -->
+        <path d="M268 385 L 288 445 L 254 472" stroke="currentColor" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="288" cy="445" r="7" fill="currentColor"/>
+      </g>
+    </svg>
+  </div>
+
+  <p class="hero__caption">
+    A long-legged wading bird in six species. Standing in water nothing else can stand in. Pink because of what it eats.
+    <em>Scroll. ↓</em>
+  </p>
+
+  <div class="hero__corner">
+    <div class="rot"><span>EDITORIAL </span><span>EDITORIAL </span><span>EDITORIAL </span></div>
+  </div>
+</section>
+
+<!-- ========== 01 / WHAT IS A FLAMINGO ========== -->
+<section class="what" id="what">
+  <div class="section-tag"><span>01</span> / WHAT IS IT</div>
+
+  <div class="what__grid">
+    <p class="what__lead">
+      A <span data-glitch>flamingo</span> is a long-legged wading bird. Family
+      <em>Phoenicopteridae</em>. Six species, all of them obsessed with water nothing else can drink.
+      Named from the Latin <em>flamma</em> — flame.
+    </p>
+
+    <ul class="what__bullets">
+      <li><span>—</span> Eats upside&#8209;down.</li>
+      <li><span>—</span> Sleeps on one leg.</li>
+      <li><span>—</span> Wades through brine and ash.</li>
+      <li><span>—</span> Turns pink from food alone.</li>
+      <li><span>—</span> Not subtle.</li>
+    </ul>
+  </div>
+
+  <blockquote class="pull">
+    <span>“</span>The flamingo is the chemistry of its own diet, made visible.<span>”</span>
+  </blockquote>
+</section>
+
+<!-- ========== STATS ========== -->
+<section class="stats" id="stats">
+  <ul class="stats__list">
+    <li><span class="num" data-target="6">0</span><span class="lab">SPECIES IN THE FAMILY</span></li>
+    <li><span class="num" data-target="60">0</span><span class="lab">YEARS · MAX LIFESPAN</span></li>
+    <li><span class="num" data-target="155" data-suffix=" CM">0</span><span class="lab">TALL · GREATER</span></li>
+    <li><span class="num" data-target="12">0</span><span class="lab">CERVICAL VERTEBRAE</span></li>
+    <li><span class="num" data-target="60" data-suffix=" KM/H">0</span><span class="lab">CRUISE FLIGHT SPEED</span></li>
+  </ul>
+</section>
+
+<!-- ========== 02 / WHY PINK ========== -->
+<section class="pink" id="pink">
+  <div class="section-tag section-tag--inv"><span>02</span> / WHY PINK</div>
+
+  <h2 class="pink__head" data-glitch>
+    NOT A DECORATION.<br />
+    A&nbsp;METABOLISM.
+  </h2>
+
+  <div class="pink__cols">
+    <div class="pink__col">
+      <p>
+        The pink comes from the food. <strong>Beta&#8209;carotene</strong> and
+        <strong>canthaxanthin</strong> — carotenoid pigments concentrated in spirulina,
+        cyanobacteria and brine shrimp — pass through the flamingo's liver, get cleaved
+        by enzymes, and deposit directly into the follicles of growing feathers, into
+        the keratin of the beak, into the skin of the legs.
+      </p>
+      <p>
+        No carotenoids in the diet, no pink. Captive flamingos fed only chicken
+        feed go <em>white</em>. The pigment is on loan from the lake.
+      </p>
+    </div>
+
+    <div class="pink__diagram" aria-hidden="true">
+      <div class="lane">
+        <span class="lane__node lane__node--algae">SPIRULINA</span>
+        <span class="lane__arrow">→</span>
+        <span class="lane__node lane__node--shrimp">BRINE SHRIMP</span>
+        <span class="lane__arrow">→</span>
+        <span class="lane__node lane__node--liver">LIVER ENZYMES</span>
+        <span class="lane__arrow">→</span>
+        <span class="lane__node lane__node--feather">FEATHER</span>
+      </div>
+      <div class="lane__label">β&#8209;CAROTENE PATHWAY · simplified</div>
+
+      <div class="swatches">
+        <div class="sw" style="--c:#FFF6E8"><span>WHITE</span><b>0 mg/kg</b></div>
+        <div class="sw" style="--c:#FFD4D9"><span>BLUSH</span><b>2 mg/kg</b></div>
+        <div class="sw" style="--c:#FF8FB1"><span>ROSE</span><b>8 mg/kg</b></div>
+        <div class="sw" style="--c:#FF2D87"><span>HOT</span><b>14 mg/kg</b></div>
+        <div class="sw" style="--c:#E11B6B"><span>SCARLET</span><b>22 mg/kg</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 03 / ANATOMY (sticky) ========== -->
+<section class="anatomy" id="anatomy">
+  <div class="anatomy__inner">
+    <div class="anatomy__stage">
+      <div class="section-tag section-tag--light"><span>03</span> / ANATOMY</div>
+
+      <svg class="anatomy__bird" viewBox="0 0 500 700" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <!-- backdrop hatching -->
+        <defs>
+          <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="1" opacity=".25"/>
+          </pattern>
+        </defs>
+        <g class="anatomy__bird-g">
+          <!-- tail -->
+          <path d="M395 372 Q438 350 448 312 L422 380 Z" fill="currentColor"/>
+          <!-- body -->
+          <ellipse cx="298" cy="378" rx="120" ry="65" fill="currentColor"/>
+          <!-- wing -->
+          <path d="M255 365 Q310 332 360 360 Q335 380 280 388 Z" fill="rgba(0,0,0,.18)"/>
+          <!-- neck -->
+          <path d="M237 362 Q170 320 195 246 Q220 168 274 152 Q335 138 330 80"
+                stroke="currentColor" stroke-width="28" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- head -->
+          <circle cx="327" cy="78" r="24" fill="currentColor"/>
+          <circle cx="335" cy="73" r="3" fill="#0A0A0A"/>
+          <!-- beak -->
+          <path d="M345 84 Q374 92 378 116 Q360 106 344 96 Z" fill="#0A0A0A"/>
+          <!-- legs -->
+          <line x1="272" y1="438" x2="272" y2="650" stroke="currentColor" stroke-width="13" stroke-linecap="round"/>
+          <circle cx="272" cy="492" r="9" fill="currentColor"/>
+          <path d="M258 652 L 304 652" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+          <!-- bent leg -->
+          <path d="M325 432 L 348 502 L 308 535" stroke="currentColor" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="348" cy="502" r="9" fill="currentColor"/>
+        </g>
+
+        <!-- callout lines & labels -->
+        <g class="anatomy__labels">
+          <g data-fact="0">
+            <line x1="345" y1="100" x2="450" y2="60" stroke="currentColor" stroke-width="1.2"/>
+            <circle cx="345" cy="100" r="4" fill="currentColor"/>
+            <text x="455" y="58">A · BEAK INVERTED</text>
+          </g>
+          <g data-fact="1">
+            <line x1="220" y1="240" x2="60" y2="200" stroke="currentColor" stroke-width="1.2"/>
+            <circle cx="220" cy="240" r="4" fill="currentColor"/>
+            <text x="6" y="198">B · 12 VERTEBRAE</text>
+          </g>
+          <g data-fact="2">
+            <line x1="272" y1="492" x2="80" y2="540" stroke="currentColor" stroke-width="1.2"/>
+            <circle cx="272" cy="492" r="4" fill="currentColor"/>
+            <text x="8" y="538">C · ANKLE NOT KNEE</text>
+          </g>
+          <g data-fact="3">
+            <line x1="298" y1="378" x2="470" y2="430" stroke="currentColor" stroke-width="1.2"/>
+            <circle cx="298" cy="378" r="4" fill="currentColor"/>
+            <text x="370" y="428">D · SALT GLAND</text>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <div class="anatomy__facts">
+      <article class="fact" data-fact="0">
+        <header><span>A.</span> BEAK INVERTED</header>
+        <p>The beak hooks <em>downward</em> because the bird feeds with its head upside-down, dragging the upper mandible through the water. Inside, <em>lamellae</em> — comb-like filters — strain algae and shrimp from the brine.</p>
+      </article>
+      <article class="fact" data-fact="1">
+        <header><span>B.</span> TWELVE VERTEBRAE</header>
+        <p>The neck holds <strong>twelve</strong> cervical vertebrae. Humans hold seven. That extra bone math is what permits the famous S-curve and the inverted feeding posture.</p>
+      </article>
+      <article class="fact" data-fact="2">
+        <header><span>C.</span> ANKLE, NOT KNEE</header>
+        <p>The joint that bends “the wrong way” halfway up the leg is the <em>ankle</em>. The actual knee sits higher, tucked under the body's plumage. Once you see it you cannot un-see it.</p>
+      </article>
+      <article class="fact" data-fact="3">
+        <header><span>D.</span> SALT GLAND</header>
+        <p>A nasal gland behind the eye filters salt out of the bloodstream and weeps it back out the nostrils. This is why flamingos can drink water that would kill almost anything else.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 04 / ONE LEG ========== -->
+<section class="leg" id="leg">
+  <div class="section-tag section-tag--inv"><span>04</span> / ONE LEG</div>
+
+  <div class="leg__wrap">
+    <h2 class="leg__head">
+      <span>NOT FOR WARMTH.</span>
+      <span class="i">not for vanity.</span>
+      <span>FOR <em data-glitch>EFFICIENCY</em>.</span>
+    </h2>
+
+    <div class="leg__body">
+      <p>
+        The standing-on-one-leg pose is not a trick of balance. The flamingo's leg
+        joints lock into a passive stay-apparatus — a mechanical brace — so that
+        standing on one leg requires almost <strong>no muscular effort at all</strong>.
+        It is the most economical way for the bird to rest. Studies have shown that
+        a sedated, dead flamingo can be balanced on one leg. The bird is, in effect,
+        a self-supporting tripod that has misplaced a leg by design.
+      </p>
+      <p class="leg__hint">› hover the bird to switch legs</p>
+    </div>
+
+    <button class="leg__bird" type="button" aria-label="Switch leg">
+      <svg viewBox="0 0 400 600" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <g class="bird">
+          <path d="M335 332 Q372 312 380 278 L355 338 Z" fill="currentColor"/>
+          <ellipse cx="245" cy="335" rx="105" ry="58" fill="currentColor"/>
+          <path d="M205 325 Q260 295 305 320 Q280 340 225 345 Z" fill="rgba(0,0,0,.18)"/>
+          <path d="M188 320 Q128 285 148 220 Q170 148 218 132 Q272 118 268 70"
+                stroke="currentColor" stroke-width="24" fill="none" stroke-linecap="round"/>
+          <circle cx="265" cy="68" r="20" fill="currentColor"/>
+          <circle cx="271" cy="64" r="2.4" fill="#0A0A0A"/>
+          <path d="M281 72 Q307 78 310 100 Q296 92 282 84 Z" fill="#0A0A0A"/>
+          <!-- legs swap on hover via CSS -->
+          <g class="leg-a">
+            <line x1="222" y1="390" x2="222" y2="568" stroke="currentColor" stroke-width="11" stroke-linecap="round"/>
+            <circle cx="222" cy="430" r="7" fill="currentColor"/>
+            <path d="M210 568 L 248 568" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+            <path d="M268 385 L 288 445 L 254 472" stroke="currentColor" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="288" cy="445" r="7" fill="currentColor"/>
+          </g>
+          <g class="leg-b">
+            <line x1="268" y1="390" x2="268" y2="568" stroke="currentColor" stroke-width="11" stroke-linecap="round"/>
+            <circle cx="268" cy="430" r="7" fill="currentColor"/>
+            <path d="M256 568 L 294 568" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+            <path d="M222 385 L 202 445 L 236 472" stroke="currentColor" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="202" cy="445" r="7" fill="currentColor"/>
+          </g>
+        </g>
+      </svg>
+    </button>
+  </div>
+</section>
+
+<!-- ========== marquee divider ========== -->
+<div class="marquee marquee--md">
+  <div class="marquee__track">
+    <span>FLAMBOYANCE&nbsp;&nbsp;◉&nbsp;&nbsp;</span>
+    <span>FLAMBOYANCE&nbsp;&nbsp;◉&nbsp;&nbsp;</span>
+    <span>FLAMBOYANCE&nbsp;&nbsp;◉&nbsp;&nbsp;</span>
+    <span>FLAMBOYANCE&nbsp;&nbsp;◉&nbsp;&nbsp;</span>
+    <span>FLAMBOYANCE&nbsp;&nbsp;◉&nbsp;&nbsp;</span>
+    <span>FLAMBOYANCE&nbsp;&nbsp;◉&nbsp;&nbsp;</span>
+  </div>
+</div>
+
+<!-- ========== 05 / HABITAT ========== -->
+<section class="habitat" id="habitat">
+  <div class="section-tag section-tag--light"><span>05</span> / HABITAT</div>
+
+  <h2 class="habitat__head">
+    THE BIRD CHOSE THE WATER<br />
+    <em class="i">nothing else wanted.</em>
+  </h2>
+
+  <div class="habitat__grid">
+    <p class="habitat__lead">
+      Alkaline lakes. Brine lagoons. Mudflats so caustic that a footprint will burn through leather.
+      <strong>Lake Natron</strong> in Tanzania — pH 10.5, sometimes 60°C — is one of the most important
+      breeding grounds on earth. The flamingo did not adapt to a hostile environment. It chose the
+      environment nothing else wanted.
+    </p>
+
+    <div class="map" aria-hidden="true">
+      <svg viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid meet">
+        <!-- simplified continents -->
+        <g class="map__land" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round">
+          <!-- North America -->
+          <path d="M120,90 L240,80 L290,140 L260,210 L200,260 L170,220 L120,200 Z"/>
+          <!-- South America -->
+          <path d="M260,260 L310,240 L320,310 L290,400 L255,440 L235,360 Z"/>
+          <!-- Europe -->
+          <path d="M460,90 L540,80 L560,140 L510,180 L470,160 Z"/>
+          <!-- Africa -->
+          <path d="M480,180 L580,170 L620,260 L590,360 L520,400 L470,330 L455,240 Z"/>
+          <!-- Asia -->
+          <path d="M560,80 L780,70 L860,140 L820,220 L720,240 L640,200 L580,150 Z"/>
+          <!-- Australia -->
+          <path d="M820,330 L900,320 L920,380 L860,400 L820,380 Z"/>
+        </g>
+        <!-- habitat pins -->
+        <g class="map__pins">
+          <g class="pin" style="--x:553px; --y:300px"><circle r="6"/><circle r="14" class="pin__halo"/><text x="14" y="4">LAKE NATRON · TZ</text></g>
+          <g class="pin" style="--x:540px; --y:280px"><circle r="6"/><circle r="14" class="pin__halo"/><text x="14" y="4">LAKE BOGORIA · KE</text></g>
+          <g class="pin" style="--x:495px; --y:170px"><circle r="6"/><circle r="14" class="pin__halo"/><text x="14" y="4">CAMARGUE · FR</text></g>
+          <g class="pin" style="--x:215px; --y:200px"><circle r="6"/><circle r="14" class="pin__halo"/><text x="14" y="4">CARIBBEAN</text></g>
+          <g class="pin" style="--x:280px; --y:360px"><circle r="6"/><circle r="14" class="pin__halo"/><text x="14" y="4">SALAR DE ATACAMA · CL</text></g>
+          <g class="pin" style="--x:720px; --y:210px"><circle r="6"/><circle r="14" class="pin__halo"/><text x="14" y="4">RANN OF KUTCH · IN</text></g>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 06 / FLAMBOYANCE ========== -->
+<section class="dance" id="dance">
+  <div class="section-tag"><span>06</span> / FLAMBOYANCE</div>
+
+  <h2 class="dance__head">
+    <span class="big">A GROUP IS CALLED A</span>
+    <span class="huge" data-glitch>FLAMBOYANCE.</span>
+  </h2>
+
+  <p class="dance__lead">
+    Tens of thousands of birds synchronizing. <em>Head-flagging</em>, <em>wing-saluting</em>,
+    <em>twist-preening</em>, <em>marching</em> — a choreography that ripples across the lake
+    with no choreographer. Courtship rendered as theater on an industrial scale.
+  </p>
+
+  <div class="flock" aria-hidden="true">
+    <div class="flock__bird" style="--d:0s;--s:1"></div>
+    <div class="flock__bird" style="--d:.1s;--s:.85"></div>
+    <div class="flock__bird" style="--d:.2s;--s:.95"></div>
+    <div class="flock__bird" style="--d:.3s;--s:.8"></div>
+    <div class="flock__bird" style="--d:.4s;--s:1.05"></div>
+    <div class="flock__bird" style="--d:.5s;--s:.9"></div>
+    <div class="flock__bird" style="--d:.6s;--s:.78"></div>
+    <div class="flock__bird" style="--d:.7s;--s:1"></div>
+    <div class="flock__bird" style="--d:.8s;--s:.86"></div>
+    <div class="flock__bird" style="--d:.9s;--s:.92"></div>
+  </div>
+</section>
+
+<!-- ========== 07 / SPECIES ========== -->
+<section class="species" id="species">
+  <div class="section-tag section-tag--inv"><span>07</span> / SPECIES · ALL SIX</div>
+
+  <div class="species__grid">
+
+    <article class="card" style="--tint:#FF2D87" data-cursor="link">
+      <div class="card__num">01</div>
+      <h3 class="card__name">GREATER<br/>FLAMINGO</h3>
+      <p class="card__sci"><em>Phoenicopterus roseus</em></p>
+      <ul class="card__meta">
+        <li><span>RANGE</span><b>AFR · EU · ASIA</b></li>
+        <li><span>HEIGHT</span><b>110–150 CM</b></li>
+        <li><span>STATUS</span><b>LC · least concern</b></li>
+      </ul>
+      <p class="card__note">The largest species — pale pink, near-white in low-carotenoid populations. The flamingo of the Camargue and the Mediterranean salt pans.</p>
+    </article>
+
+    <article class="card" style="--tint:#E5145B" data-cursor="link">
+      <div class="card__num">02</div>
+      <h3 class="card__name">AMERICAN<br/>FLAMINGO</h3>
+      <p class="card__sci"><em>Phoenicopterus ruber</em></p>
+      <ul class="card__meta">
+        <li><span>RANGE</span><b>CARIBBEAN · GALÁPAGOS</b></li>
+        <li><span>HEIGHT</span><b>120–145 CM</b></li>
+        <li><span>STATUS</span><b>LC · least concern</b></li>
+      </ul>
+      <p class="card__note">The poster species. The most saturated reds in the family — almost orange under direct sun. Lives where diets are richest in carotenoids.</p>
+    </article>
+
+    <article class="card" style="--tint:#FF85AE" data-cursor="link">
+      <div class="card__num">03</div>
+      <h3 class="card__name">CHILEAN<br/>FLAMINGO</h3>
+      <p class="card__sci"><em>Phoenicopterus chilensis</em></p>
+      <ul class="card__meta">
+        <li><span>RANGE</span><b>S. AMERICA</b></li>
+        <li><span>HEIGHT</span><b>110–130 CM</b></li>
+        <li><span>STATUS</span><b>NT · near threatened</b></li>
+      </ul>
+      <p class="card__note">Identifiable by grey-blue legs with bright pink joints — as if the legs were assembled from spare parts.</p>
+    </article>
+
+    <article class="card" style="--tint:#FFB1C5" data-cursor="link">
+      <div class="card__num">04</div>
+      <h3 class="card__name">LESSER<br/>FLAMINGO</h3>
+      <p class="card__sci"><em>Phoeniconaias minor</em></p>
+      <ul class="card__meta">
+        <li><span>RANGE</span><b>EAST AFRICA · INDIA</b></li>
+        <li><span>HEIGHT</span><b>80–90 CM</b></li>
+        <li><span>STATUS</span><b>NT · near threatened</b></li>
+      </ul>
+      <p class="card__note">The smallest and most numerous — populations into the millions. Forms the iconic pink crowds that fill Lake Bogoria and Natron.</p>
+    </article>
+
+    <article class="card" style="--tint:#C7104F" data-cursor="link">
+      <div class="card__num">05</div>
+      <h3 class="card__name">JAMES'S<br/>FLAMINGO</h3>
+      <p class="card__sci"><em>Phoenicoparrus jamesi</em></p>
+      <ul class="card__meta">
+        <li><span>RANGE</span><b>HIGH ANDES</b></li>
+        <li><span>HEIGHT</span><b>90–100 CM</b></li>
+        <li><span>STATUS</span><b>NT · near threatened</b></li>
+      </ul>
+      <p class="card__note">Lives at 4,000+ metres on freezing salt flats. Was thought extinct for half the 20th century until a remnant population was rediscovered in 1956.</p>
+    </article>
+
+    <article class="card" style="--tint:#9A0A3F" data-cursor="link">
+      <div class="card__num">06</div>
+      <h3 class="card__name">ANDEAN<br/>FLAMINGO</h3>
+      <p class="card__sci"><em>Phoenicoparrus andinus</em></p>
+      <ul class="card__meta">
+        <li><span>RANGE</span><b>BOLIVIA · CHILE · PERU · ARG</b></li>
+        <li><span>HEIGHT</span><b>100–110 CM</b></li>
+        <li><span>STATUS</span><b>VU · vulnerable</b></li>
+      </ul>
+      <p class="card__note">The only flamingo with <em>yellow legs</em>. Rarest of the six. Breeds on the Salar de Atacama — now being mined for the lithium in your phone.</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ========== 08 / CONSERVATION ========== -->
+<section class="warning" id="warning">
+  <div class="warning__tape" aria-hidden="true">
+    <div class="marquee marquee--xs marquee--inverse">
+      <div class="marquee__track">
+        <span>⚠ THREATENED&nbsp;&nbsp;⚠ THREATENED&nbsp;&nbsp;⚠ THREATENED&nbsp;&nbsp;⚠ THREATENED&nbsp;&nbsp;⚠ THREATENED&nbsp;&nbsp;⚠ THREATENED&nbsp;&nbsp;⚠ THREATENED&nbsp;&nbsp;⚠ THREATENED&nbsp;&nbsp;</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-tag section-tag--light"><span>08</span> / CONSERVATION</div>
+
+  <h2 class="warning__head">
+    THREE OF SIX SPECIES<br />
+    ARE&nbsp;<em data-glitch>DISAPPEARING</em>.
+  </h2>
+
+  <div class="warning__cols">
+    <p>
+      The flamingo lives in the world's most fragile water — high-altitude salt flats and
+      shallow alkaline lakes that took millions of years to form and can evaporate in a decade.
+      Their habitats are now being drained for irrigation, scraped for soda ash, and increasingly
+      <strong>excavated for lithium</strong> for the batteries in cars, laptops and phones.
+    </p>
+    <p>
+      The Andean salt flats sustain three species at once. They are also the world's largest
+      lithium reserve. The most colorful birds on the planet are vanishing into the supply chain
+      for things that are not pink at all.
+    </p>
+  </div>
+
+  <ul class="warning__list">
+    <li><b>LESSER</b><span>↓ DECLINING · NT</span></li>
+    <li><b>CHILEAN</b><span>↓ DECLINING · NT</span></li>
+    <li><b>JAMES'S</b><span>↓ DECLINING · NT</span></li>
+    <li><b>ANDEAN</b><span>↓ DECLINING · VU</span></li>
+    <li><b>GREATER</b><span>= STABLE · LC</span></li>
+    <li><b>AMERICAN</b><span>= STABLE · LC</span></li>
+  </ul>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="foot">
+  <div class="marquee marquee--lg">
+    <div class="marquee__track">
+      <span>END OF FILE&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+      <span>END OF FILE&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+      <span>END OF FILE&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+      <span>END OF FILE&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+      <span>END OF FILE&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+    </div>
+  </div>
+
+  <div class="foot__grid">
+    <div>
+      <div class="foot__label">COLOPHON</div>
+      <p>An editorial study of <em>Phoenicopteridae</em>. Set in Bricolage Grotesque, Fraunces, and JetBrains Mono. Built with HTML, CSS and JavaScript &mdash; no frameworks.</p>
+      <p class="foot__credit">Designed &amp; built by <strong>Daria Chikaeva</strong> &mdash; <em>Designer.</em></p>
+    </div>
+    <div>
+      <div class="foot__label">SOURCES</div>
+      <ul>
+        <li>— IUCN Red List, 2024</li>
+        <li>— Chang &amp; Ting, <em>Mechanical Stability of Standing on One Leg</em>, 2017</li>
+        <li>— Fox, <em>Animal Biochromes</em></li>
+        <li>— Anderson &amp; Williams, Wildfowl &amp; Wetlands Trust</li>
+      </ul>
+    </div>
+    <div>
+      <div class="foot__label">INDEX</div>
+      <ul class="foot__nav">
+        <li><a href="#hero" data-cursor="link">00 HERO</a></li>
+        <li><a href="#what" data-cursor="link">01 WHAT</a></li>
+        <li><a href="#pink" data-cursor="link">02 PINK</a></li>
+        <li><a href="#anatomy" data-cursor="link">03 ANATOMY</a></li>
+        <li><a href="#leg" data-cursor="link">04 LEG</a></li>
+        <li><a href="#habitat" data-cursor="link">05 HABITAT</a></li>
+        <li><a href="#dance" data-cursor="link">06 DANCE</a></li>
+        <li><a href="#species" data-cursor="link">07 SPECIES</a></li>
+        <li><a href="#warning" data-cursor="link">08 CONSERVATION</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="foot__base">
+    <span>© 2026 — DARIA CHIKAEVA</span>
+    <span class="foot__sig">— for the birds that chose the impossible water.</span>
+    <span>N° 001 / 001</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
